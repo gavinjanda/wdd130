@@ -1,0 +1,54 @@
+nav {
+    background-color: steelblue;
+    padding: 10px;
+}
+nav a {
+    color: white;
+    display:block;
+    padding: 20px;
+}
+h1{
+    color: steelblue
+}
+img{ 
+    width: 150px;
+    height: auto;
+    border: 1px solid steelblue;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+}
+p {
+    padding: 10px;
+}
+
+.callout {
+    width:400px;
+    margin: 10px;
+    border: 1px solid rgba(0,0,0,0.1);
+    padding: 15px;
+    background-color: #247;
+    color: rgb(240,240,240)
+}
+
+.callout img {
+	float: right;
+    margin:0 0 10px 15px;
+    border: 3px solid gray;
+    padding: 5px rgb(200,200,200);
+    background-color: #000000;
+    width: 100px;
+    height:auto
+}
+
+blockquote {
+	margin: 0;
+}
+
+cite {
+	display: block;
+    border-top: dotted 2px lightgray;
+    padding-top: 10px;
+    text-align: right;
+    font-size: smaller;
+}
+

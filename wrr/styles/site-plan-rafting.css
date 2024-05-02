@@ -1,0 +1,58 @@
+@import url(https://fonts.google.com/specimen/Ubuntu+Sans);
+
+body {
+    font-family: var(--paragraph-font);
+    max-width:960px;
+    padding: 20px;
+}
+
+:root {
+    --primary-color: #57cc99;
+    --secondary-color: #22577a;
+    --accent1-color: #c7f9cc;
+    --accent2-color: #80ed99;
+    
+    --heading-font: '', serif;
+    --paragraph-font: '_____', serif;
+
+    --nav-background-color: #ffffff;
+    --nav-link-color: #c7f9cc;
+    --nav-hover-link-color: #c7f9cc;
+    --nav-hover-background-color: #80ed99;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color)
+}
+
+header {
+    padding: 20px;
+    background-color: var(--accent1-color);
+}
+
+p {
+    padding: 20px;
+}
+
+nav {
+    background-color: var(--nav-background-color);
+    font-size: 1.2rem;
+    display: flex;
+}
+
+nav a {
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:link, nav a:visited {
+    color: var(--nav-link-color);
+}
+
+Nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
