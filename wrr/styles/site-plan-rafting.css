@@ -1,38 +1,42 @@
-@import url(https://fonts.google.com/specimen/Ubuntu+Sans);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
+
 
 body {
     font-family: var(--paragraph-font);
     max-width:960px;
-    padding: 20px;
+    padding: 15px;
+    background-color: var(--background-color);
 }
 
 :root {
-    --primary-color: #57cc99;
-    --secondary-color: #22577a;
-    --accent1-color: #c7f9cc;
-    --accent2-color: #80ed99;
+    --primary-color: #283618;
+    --secondary-color: #bc6c25;
+    --accent1-color: #606c38;
+    --accent2-color: #dda15e;
+    --background-color: #fefae0;
     
-    --heading-font: '', serif;
-    --paragraph-font: '_____', serif;
+    --heading-font: 'Ubuntu Sans', serif;
+    --paragraph-font: 'Open Sans', serif;
 
     --nav-background-color: #ffffff;
-    --nav-link-color: #c7f9cc;
-    --nav-hover-link-color: #c7f9cc;
-    --nav-hover-background-color: #80ed99;
+    --nav-link-color: #dda15e;
+    --nav-hover-link-color: #dda15e;
+    --nav-hover-background-color: lightgray;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
-    color: var(--primary-color)
+    color: var(--accent1-color);
 }
 
 header {
-    padding: 20px;
-    background-color: var(--accent1-color);
+    padding: 10px;
+    background-color: var(--accent2-color);
 }
 
 p {
-    padding: 20px;
+    padding: 10px;
+    color: var(--secondary-color);
 }
 
 nav {
@@ -55,4 +59,20 @@ nav a:link, nav a:visited {
 Nav a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
+}
+
+footer {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid var(--accent2-color);
+    margin-top: 20px;
+    color: var(--accent1-color)
+}
+
+ul {
+    color: var(--secondary-color);
+}
+
+div {
+    color: var(--accent1-color)
 }
