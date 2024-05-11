@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
+
+:root {
+    --primary-color: #283618;
+    --secondary-color: #bc6c25;
+    --accent1-color: #606c38;
+    --accent2-color: #dda15e;
+    --background-color: #fefae0;
+    
+    --heading-font: 'Ubuntu Sans', serif;
+    --paragraph-font: 'Open Sans', serif;
+
+    --nav-background-color: #ffffff;
+    --nav-link-color: #dda15e;
+    --nav-hover-link-color: #dda15e;
+    --nav-hover-background-color: lightgray;
+}
+
+body {
+    max-width: 600px;
+}
+
+header {
+    margin: 10px;
+    border: 2px black;
+    padding: 10px;
+}
+
+section.pictures {
+    width: 100px;
+    height: auto;
+}
+
+section.history {
+    margin: 20px;
+    border: 2px black;
+    padding: 10px;
+}
+
