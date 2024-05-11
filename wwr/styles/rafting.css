@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
 :root {
     --primary-color: #283618;
     --secondary-color: #f2cc8f;
@@ -22,68 +17,89 @@
 }
 
 body {
-    max-width: 840px;
     background-color: var(--background-color);
+    max-width: 750px;
 }
 
 header {
     margin: 10px;
-    border: 2px black;
     padding: 10px;
     text-decoration: none;
 }
 
-.hero {
+nav a:link {
+    text-decoration: none;
+    color: var(--primary-color)
+}
+
+nav a:hover {
+    color: var(--secondary-color);
+}
+
+nav a:visited {
+    color: var(--accent1-color)
+}
+
+.hero img {
     display: block;
+    position: relative;
     width: 100%;
     height: auto;
+    margin: 20px;
 }
 
 p {
-    color: var(--primary-color)
+    color: var(--primary-color);
+    font-family: var(--paragraph-font);
+    padding: 10px;
 }
 
 h1 {
     position: absolute;
-    bottom: 350px;
-    left: 300px;
-    background: transparent 50% gray;
+    bottom: 430px;
+    left: 290px;
+    background: radial-gradient(#eee, #fffcf856);
     font-family: var(--heading-font);
 }
 
 article {
     position: absolute;
-    bottom: 175px;
-    left: 0px;
+    float: none;
+    bottom: 260px;
+    left: 50px;
     background: radial-gradient(#eee, #fffcf856);
     margin: 20px;
     border: 1px solid var(--secondary-color);
     padding: 0.65rem;
-    width: auto;
-    height: 95px;
     box-shadow: 0 0 10px #111;
-    opacity: 0.7;
+    opacity: 0.9;
+}
+
+.customer {
+    float:right;
+    opacity: 1;
 }
 
 h1, h2 {
-    color: var(--accent1-color)
+    color: var(--accent1-color);
+    font-family: var(--heading-font);
 }
 
-section {
-    height: auto;
+.adventure {
+    margin: 20px;
 }
 
 section.history {
     margin: 20px;
-    border: 2px black;
-    padding: 10px;
+}
+
+.description {
+    margin: 0px;
+    padding: 0px;
 }
 
 footer {
     margin-top: 20px;
-    border-top: 1px solid var(--accent2-color)
-}
-
-a.link {
-    text-decoration: none;
+    border-top: 1px solid var(--accent2-color);
+    font-size: smaller;
 }
