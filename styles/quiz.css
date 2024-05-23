@@ -4,6 +4,9 @@
     --primary-color: #e0e1dd;
     --secondary-color: #0d1b2a;
     --accent1-color: #778da9;
+
+    --heading-font: 'Ubuntu Sans', serif;
+    --paragraph-font: 'Open Sans', serif;
 }
 
 * {
@@ -19,8 +22,9 @@ header {
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
     color: var(--secondary-color);
+    font-family: var(--heading-font);
 }
 
 form {
@@ -28,9 +32,8 @@ form {
     padding: 30px;
     margin: 10px;
     border-radius: 0.5em;
-    display:grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    display:flex;
+    flex-direction: column;
     border: thin solid black;
     max-width: 700px;
     color: var(--secondary-color);
@@ -38,11 +41,37 @@ form {
 
 label {
     font-size: 1.1rem;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    font-family: var(--paragraph-font);
 }
+
+input, select, textarea {
+    padding: 5px;
+    font-size: .9em;
+}
+
+
 
 button {
     background-color: var(--accent1-color);
+    margin-top: 25px;
+    width: 600px;
+    font-size: 1.2em;
+    border-radius: 0.3em;
+    align-self: center;
+}
+
+button:hover {
+    background-color: darkgray;
+}
+
+footer {
+    width: 700px;
+    text-align: center;
     margin: 10px;
-    width: 300px;
-    justify-self: center;
+    border-top: solid thin var(--secondary-color);
+    padding: 15px;
+
 }
