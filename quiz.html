@@ -11,17 +11,24 @@
 <body>
     <header>
         <h1>HTML and CSS Quiz</h1>
-
     </header>
     <main>
         <form>
-            <label for="q1"><strong>1.</strong> What does HTML stand for?</label><br>
-            <input type="text" id="q1" name="q1"><br>
-            <label for="q2">2. What is the difference between front-end and back-end development?</label><br>
-            <input type="textarea" id="q2" name="q2"><br>
-            <label for="q3">3. </h2>
+            <label for="q1" class="q1"><strong>1.</strong> What does HTML stand for?</label><br>
+                <input type="text" id="q1" name="q1"><br>
+            <label for="q2" class="q2"><strong>2.</strong> What is the difference between front-end and back-end development?</label><br>
+                <input type="textarea" id="q2" name="q2" rows="3" placeholder="At least 3 sentences."><br>
+            <label for="q3" class="q3"><strong>3.</strong> Which charset value covers the most characters and symbols?</label>
+                <select id="q3" name="q3">
+                    <option value="" selected disabled>Choose One..</option>
+                    <option value="JIS">JIS</option>
+                    <option value="UTF-8">UTF-8</option>
+                    <option calue="ASCII">ASCII</option>
+                </select><br>
+            <label for="q4" class="q4"><strong>4.</strong> How </label>
+                <input type="number" id="q4" name="q4">
+            <button type="submit">Submit Quiz</button>
         </form>
     </main>
-    
 </body>
 </html>

@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
+
+:root {
+    --primary-color: #e0e1dd;
+    --secondary-color: #0d1b2a;
+    --accent1-color: #778da9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    max-width: 700px;
+    text-align: center;
+    padding:10px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: var(--secondary-color);
+}
+
+form {
+    background-color: var(--primary-color);
+    padding: 30px;
+    margin: 10px;
+    border-radius: 0.5em;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    border: thin solid black;
+    max-width: 700px;
+    color: var(--secondary-color);
+}
+
+label {
+    font-size: 1.1rem;
+}
+
+button {
+    background-color: var(--accent1-color);
+    margin: 10px;
+    width: 300px;
+    justify-self: center;
+}
