@@ -144,7 +144,7 @@ figcaption {
 
 form {
     display:grid;
-    grid-template-columns: 1;
+    grid-template-columns: 1fr;
     margin: 20px;
     border: solid thin var(--primary-color);
     border-radius: 0.5rem;
@@ -262,11 +262,17 @@ footer img{
     max-width: 300px;
 }
 
+.employees {
+    display:grid;
+    grid-template-columns: repeat(12,1fr);
+    margin: 10px;
+}
+
 .figures {
     display: flex;
     justify-content: center;
-    flex-wrap: row;
     gap: 5px;
+    max-width: 300px;
 }
 
 .end {
