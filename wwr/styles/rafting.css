@@ -1,23 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
 
 :root {
-    --primary-color: #283618;
-    --secondary-color: #f2cc8f;
-    --accent1-color: #e07a5f;
-    --accent2-color: #81b29a;
-    --background-color: #f4f1de;
+    --primary-color: #353535;
+    --secondary-color: #e7ecef;
+    --accent1-color: #3c6e71;
+    --accent2-color: #284b63;
+    --background-color: #ffffff;
     
     --heading-font: 'Ubuntu Sans', serif;
     --paragraph-font: 'Open Sans', serif;
 
     --nav-background-color: #ffffff;
-    --nav-link-color: #81b29a;
-    --nav-hover-link-color: #81b29a;
+    --nav-link-color: #a3cef1;
+    --nav-hover-link-color: #6096ba;
     --nav-hover-background-color: lightgray;
 }
 
 * {
     box-sizing: border-box;
+}
+
+header,
+main,
+body {
+    margin: auto;
+    max-width: 1280px;
 }
 
 body {
@@ -40,9 +47,12 @@ header {
     background-color: var(--secondary-color);
 }
 
+a {
+    text-decoration: none;
+}
+
 nav a {
     padding: 1em;
-    text-decoration: none;
     color: var(--primary-color);
 }
 
@@ -51,7 +61,19 @@ nav a:hover {
 }
 
 nav a:visited {
-    color: var(--nav-hover-link-color)
+    color: var(--accent1-color)
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.3rem;
 }
 
 .hero h1 {
@@ -78,7 +100,7 @@ article {
     top: 150px;
     left: 50px;
     right: 50px;
-    background: rgba(242, 204, 143, 0.75);
+    background: rgba(231, 236, 239, 0.65);
     padding: 5px;
 }
 
@@ -193,7 +215,7 @@ legend {
 }
 
 button {
-    background-color: var(--accent1-color);
+    background-color: var(--nav-link-color);
     padding: .5rem;
     margin: 10px;
     font-size: 1.3rem;
@@ -229,6 +251,86 @@ footer img{
     width: 200px;
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    align-items: center;
+}
+
+.grid1 {
+    display: grid;
+    grid-column: 1/13;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+}
+
+.mainimg {
+    grid-column: 1/13;
+    grid-row: 1/7;
+    position: relative;
+    z-index:0;
+
+}
+
+.tripsh1 {
+    grid-column: 2/12;
+    grid-row: 2/3;
+    z-index: 1;
+    background-color: rgba(231, 236, 239, 0.65);
+    padding: 10px;
+}
+
+.tripsbut {
+    grid-column: 6/8;
+    grid-row: 4/5;
+    z-index: 1;
+    font-family: var(--paragraph-font);
+    font-size: 2rem;
+    background-color: var(--secondary-color);
+    color: var(--accent2-color);
+    text-align: center;
+    padding:7px;
+    border-radius: 0.5rem;
+    border: solid thin var(--primary-color);
+    box-shadow: 2px 2px 2px black;
+}
+
+.triph2 {
+    grid-column: 6/8;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+.grid2 {
+    grid-column: 1/13;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    margin: 40px;
+    gap: 15px;
+}
+
+.grid2 img {
+    max-width: 400px;
+}
+
+.grid3 {
+    grid-column: 5/9;
+    margin: 30px;
+}
+
+table {
+    border: solid thin black;
+    background-color: var(--secondary-color);
+    border-collapse: collapse;
+}
+
+th,
+td {
+    text-align: center;
+    border: solid thin black;
+}
+
 .hero {
     position:relative;
 }
@@ -243,10 +345,6 @@ footer img{
     display: block;
     width: 100%;
     height: auto;
-}
-
-.contacth1 {
-    text-align: center;
 }
 
 .adventure {
