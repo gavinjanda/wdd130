@@ -391,7 +391,8 @@ td {
 }
 
 .adventure img {
-    width: 100%;
+    height: 165px;
+    box-shadow: 4px 4px 4px var(--primary-color);
 }
 
 .indian {
