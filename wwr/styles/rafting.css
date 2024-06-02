@@ -73,7 +73,8 @@ h2 {
 }
 
 h3 {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
+    text-align: center;
 }
 
 .hero h1 {
@@ -162,6 +163,7 @@ figcaption {
     color: var(--primary-color);
     padding: 2px;
     text-align: center;
+    box-shadow: 4px 4px 4px var(--primary-color);
 }
 
 form {
@@ -312,11 +314,28 @@ footer img{
 
 .grid2 img {
     max-width: 400px;
+    box-shadow: 4px 4px 4px var(--primary-color);
 }
 
 .grid3 {
     grid-column: 5/9;
     margin: 30px;
+}
+
+.grid4 {
+    grid-column: 1/13;
+    display: flex;
+    gap: 30px;
+}
+
+.box {
+    border: 1px solid var(--primary-color);
+    padding: 20px;
+    background-color: var(--secondary-color)
+}
+
+.homep {
+    font-size: 1.3rem;
 }
 
 table {
@@ -329,6 +348,25 @@ th,
 td {
     text-align: center;
     border: solid thin black;
+}
+
+.tmile {
+    max-height: 268px;
+}
+
+.first {
+    padding: 10px;
+    margin: 5px;
+    font-size: 1.2rem;
+}
+
+.ne {
+    width:300px;
+    height:25px;
+}
+
+.home {
+    grid-column: 4/10;
 }
 
 .hero {
@@ -371,6 +409,10 @@ td {
     justify-content: center;
     gap: 5px;
     max-width: 300px;
+}
+
+.moqup {
+    color:var(--primary-color);
 }
 
 .end {
